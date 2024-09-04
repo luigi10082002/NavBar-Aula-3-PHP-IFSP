@@ -43,6 +43,20 @@
                         <?php endif; ?>
                     </li>
                     <li class="nav-item">
+                        <?php if ($pg_atual == 'multiplicacao'): ?>
+                            <a class="nav-link active" aria-current="page" href="#">Multiplicação</a>
+                        <?php else: ?>
+                            <a class="nav-link" href="recebe_numeros_multiplicacao.php">Multiplicação</a>
+                        <?php endif; ?>
+                    </li>
+                    <li class="nav-item">
+                        <?php if ($pg_atual == 'divisao'): ?>
+                            <a class="nav-link active" aria-current="page" href="#">Divisão</a>
+                        <?php else: ?>
+                            <a class="nav-link" href="recebe_numeros_divisao.php">Divisão</a>
+                        <?php endif; ?>
+                    </li>
+                    <li class="nav-item">
                         <?php if ($pg_atual == 'resultado'): ?>
                             <a class="nav-link active" aria-current="page" href="#">Resultado</a>
                         <?php else: ?>

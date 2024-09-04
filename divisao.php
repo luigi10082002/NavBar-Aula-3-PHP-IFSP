@@ -7,22 +7,25 @@
 </head>
 <body>
 <?php
-$pg_atual = 'subtracao';
+$pg_atual = 'resultado';
 
 include 'navbar.php';
 ?>
     <div class='container-fluid'>
-        <h1>Calculadora de Subtração</h1>
-        <form action="subtracao.php">
-            <label for="num1" class="form-label">Número 1:</label>
-            <!-- $_GET['num1'] -->
-            <input type="number" id="num1" name="num1" class="form-control"><br>
+        <h1>Resultado:</h1>
+<?php
 
-            <label for="num2" class="form-label">Número 2:</label>
-            <!-- $_GET['num2'] -->
-            <input type="number" id="num2" name="num2" class="form-control"><br>
-            <input type="submit" value="Calcular" class="btn btn-primary">
-        </form>
+$n1 = $_GET['num1'];
+$n2 = $_GET['num2'];
+
+function divisao($primeiro, $segundo,) // vírgula permitida em PHP 8
+{
+    echo "$primeiro / $segundo = ", $primeiro / $segundo;
+}
+
+$resultado = divisao($n1, $n2);
+echo $resultado;
+?>  
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

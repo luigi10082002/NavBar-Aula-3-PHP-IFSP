@@ -7,13 +7,13 @@
 </head>
 <body>
 <?php
-$pg_atual = 'subtracao';
+$pg_atual = 'divisao';
 
 include 'navbar.php';
 ?>
     <div class='container-fluid'>
-        <h1>Calculadora de Subtração</h1>
-        <form action="subtracao.php">
+        <h1>Calculadora de Divisão</h1>
+        <form action="divisao.php">
             <label for="num1" class="form-label">Número 1:</label>
             <!-- $_GET['num1'] -->
             <input type="number" id="num1" name="num1" class="form-control"><br>

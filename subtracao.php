@@ -18,12 +18,12 @@ include 'navbar.php';
 $n1 = $_GET['num1'];
 $n2 = $_GET['num2'];
 
-function soma($primeiro, $segundo,) // vírgula permitida em PHP 8
+function subtracao($primeiro, $segundo,) // vírgula permitida em PHP 8
 {
     echo "$primeiro - $segundo = ", $primeiro - $segundo;
 }
 
-$resultado = soma($n1, $n2);
+$resultado = subtracao($n1, $n2);
 echo $resultado;
 ?>  
     </div>
